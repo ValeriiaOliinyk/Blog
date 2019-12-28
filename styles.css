@@ -15,6 +15,10 @@ html {
   --list-color: #b4ad9e;
 }
 
+body {
+  width: 1200px;
+}
+
 .menu-list {
   text-decoration: none;
   color: var(--text-color);
@@ -48,10 +52,11 @@ html {
 /*Переходим к body*/
 
 .list-1 {
-  padding-left: 0;
-  list-style-type: none;
+  padding: 0;
   width: 900px;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .paragraph-title {
@@ -75,16 +80,27 @@ html {
 .button {
   color: var(--text-color);
   font-family: var(--font-family);
-  font-size: 30px;
-  line-height: 1.7;
+  font-size: 20px;
+  line-height: 1.2;
   cursor: pointer;
+  border: 1px solid var(--text-color);
+  font-family: var(--font-family);
+  margin-top: 55px;
+  margin-bottom: 70px;
+  height: 60px;
+  width: 165px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /*Контейнер*/
 .container {
   width: 1200px;
-  margin-right: 150px;
-  margin-left: 150px;
+  padding-right: 150px;
+  padding-left: 150px;
 }
 
 .clear-fixation {
@@ -104,4 +120,14 @@ html {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-right: 60px;
+  list-style-type: none;
+}
+
+.item:nth-child(2n) {
+  margin-right: 0px;
 }
