@@ -48,17 +48,10 @@ html {
 /*Переходим к body*/
 
 .list-1 {
-  color: var(--list-color);
-  font-family: var(--font-family);
-  font-size: 14px;
-  line-height: 1.2;
-  text-transform: uppercase;
   padding-left: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 0;
   width: 900px;
+  margin: 0;
 }
 
 .paragraph-title {
@@ -67,6 +60,8 @@ html {
   font-size: 30px;
   line-height: 1.2;
   font-weight: 400;
+  margin-bottom: 42px;
+  margin-top: 0;
 }
 
 .paragraph {
@@ -74,6 +69,7 @@ html {
   font-family: var(--font-family);
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 0;
 }
 
 .button {
@@ -91,11 +87,21 @@ html {
   margin-left: 150px;
 }
 
+.clear-fixation {
+  margin: 0;
+  padding: 0;
+}
+
 .value-h {
   height: 280px;
 }
 
-.list-1-1 {
-  margin-right: 60px;
-  flex-basis: calc(100% / 2 - 30px);
+.paragraph-list-1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--list-color);
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
