@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -20,10 +22,22 @@ html {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.7;
+  margin-right: 110px;
+}
+
+.list-li {
+  margin-top: 74px;
+  margin-bottom: 100px;
 }
 
 .list {
   list-style-type: none;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .menu-list:focus,
@@ -39,6 +53,12 @@ html {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  width: 900px;
 }
 
 .paragraph-title {
@@ -62,4 +82,20 @@ html {
   font-size: 30px;
   line-height: 1.7;
   cursor: pointer;
+}
+
+/*Контейнер*/
+.container {
+  width: 1200px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.value-h {
+  height: 280px;
+}
+
+.list-1-1 {
+  margin-right: 60px;
+  flex-basis: calc(100% / 2 - 30px);
 }
