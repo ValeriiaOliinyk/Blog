@@ -86,7 +86,6 @@ body {
   border: 1px solid var(--text-color);
   font-family: var(--font-family);
   margin-top: 55px;
-  margin-bottom: 70px;
   height: 60px;
   width: 165px;
   margin-left: auto;
@@ -135,4 +134,8 @@ body {
 
 .item:nth-child(2n) {
   margin-right: 0px;
+}
+
+.section-first {
+  margin-bottom: 70px;
 }
