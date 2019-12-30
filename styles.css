@@ -26,25 +26,31 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.7;
-  margin-right: 110px;
 }
 
 .list-li {
-  margin-top: 74px;
-  margin-bottom: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 105px;
 }
 
 .list {
   list-style-type: none;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 0;
+  margin-right: 0;
   display: flex;
+  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+}
+.list-li:first-child {
+  margin-left: 165px;
 }
 
-.menu-list:focus,
+.list-li:last-child {
+  margin-right: 165px;
+}
+
 .menu-list:hover {
   color: var(--text-transformation);
 }
@@ -97,9 +103,18 @@ body {
 
 /*Контейнер*/
 .container {
-  width: 1200px;
+  width: 900px;
   margin-right: 150px;
   margin-left: 150px;
+}
+
+.container-nav {
+  width: 900px;
+  margin-right: 150px;
+  margin-left: 150px;
+  height: 30px;
+  margin-top: 75px;
+  margin-bottom: 100px;
 }
 
 .clear-fixation {
