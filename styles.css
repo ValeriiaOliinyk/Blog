@@ -98,8 +98,8 @@ body {
 /*Контейнер*/
 .container {
   width: 1200px;
-  padding-right: 150px;
-  padding-left: 150px;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 .clear-fixation {
