@@ -96,6 +96,10 @@ html {
   justify-content: center;
 }
 
+.button:hover {
+  background-color: var(--text-transformation);
+}
+
 /*Контейнер*/
 .container {
   width: 900px;
